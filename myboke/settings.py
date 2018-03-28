@@ -119,4 +119,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+# 润许访问的 host
+ALLOWED_HOSTS = ['*']
+
 STATIC_URL = '/static/'
