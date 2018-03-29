@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '0hot1b8__14$rh78j5l##)_lk!$y-60+1!0l_0n8#tw@_ld5f8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -123,3 +123,9 @@ USE_TZ = True
 ALLOWED_HOSTS = ['*']
 
 STATIC_URL = '/static/'
+# 定义静态文件目录
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),)
+
+# 添加默认的静态目录[收集使用]
+STATIC_ROOT = os.path.join(BASE_DIR, "static_all")
