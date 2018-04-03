@@ -15,7 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-
+from myboke1 import views as app_vieew
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$',app_vieew.index,name="index"),
 ]
